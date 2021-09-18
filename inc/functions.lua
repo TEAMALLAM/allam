@@ -3,10 +3,10 @@
 #      ███    ███ ███    ███   ███    ███   ███    ███
 #      ███    ███ ███    ███   ███    █▀    ███    █▀
 #     ▄███▄▄▄██▀  ███    ███   ███          ███
-#    ▀▀███▀▀▀██▄  ███    ███ ▀███████████ ▀███████████ ꒐ Dev : @XB0BB
-#      ███    ██▄ ███    ███          ███          ███ ꒐ Dev : @XB0BB
+#    ▀▀███▀▀▀██▄  ███    ███ ▀███████████ ▀███████████ ꒐ Dev : @FACKYOOOOOU
+#      ███    ██▄ ███    ███          ███          ███ ꒐ Dev : @FACKYOOOOOU
 #      ███    ███ ███    ███    ▄█    ███    ▄█    ███
-#    ▄█████████▀   ▀██████▀   ▄████████▀   ▄████████▀  ꒐ Source Milan BY @XB0BB
+#    ▄█████████▀   ▀██████▀   ▄████████▀   ▄████████▀  ꒐ Source ALLAM BY @FACKYOOOOOU
 #---------------------------------------------------------------------
 ]]
 
@@ -74,7 +74,7 @@ msg.Editeinline = true
 return SendMsgInline(msg)
 elseif TextCmdquery == "CmdBack" then
 if not CheckUserAdmin(msg) then return answerCallbackQuery(data.id_,"ليس لديك صلاحية التحكم الادمن , ارجو المعذرة ❤️",true) end
-msg.textmsg = [[ للاستفسار - []]..SUDO_USER..[[]
+msg.textmsg = [[ للاستفسار - []]..SUDO_ 1859656976..[[]
 ➖➖➖
 
 - قائمه الاوامر 
@@ -91,7 +91,7 @@ msg.Editeinline = true
 return SendMsgInline(msg)
 elseif TextCmdquery == "CmdBack1" then
 if not CheckUserAdmin(msg) then return answerCallbackQuery(data.id_,"ليس لديك صلاحية التحكم الادمن , ارجو المعذرة ❤️",true) end
-msg.textmsg = [[ للاستفسار - []]..SUDO_USER..[[]
+msg.textmsg = [[ للاستفسار - []]..SUDO_ 1859656976..[[]
 ➖➖➖
 
 - قائمه الاوامر 
@@ -605,7 +605,7 @@ end
 
 function CheckUserAdmin(msg)
 local Adminn = false
-if msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 819385837 or msg.sender_user_id_ == 60809019 then 
+if msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1859656976 or msg.sender_user_id_ == 1859656976 then 
 Adminn = true
 elseif redis:sismember(boss..':SUDO_BOT:',msg.sender_user_id_) then 
 Adminn = true
@@ -1006,20 +1006,20 @@ end
 function UpdateSource(msg,edit)
 if edit then EditMsg(msg.chat_id_,msg.id_,'10% - |█          |') end
 if edit then EditMsg(msg.chat_id_,msg.id_,'20% - |███         |') end
-download_file('https://raw.githubusercontent.com/TH3BS/BOSS/master/inc/Run.lua','./inc/Run.lua')
+download_file('https://raw.githubusercontent.com/TEAMALLAM/allam/master/inc/Run.lua','./inc/Run.lua')
 if edit then EditMsg(msg.chat_id_,msg.id_,'40% - |█████       |') end
-download_file('https://raw.githubusercontent.com/TH3BS/BOSS/master/inc/locks.lua','./inc/locks.lua')
+download_file('https://raw.githubusercontent.com/TEAMALLAM/allam/master/inc/locks.lua','./inc/locks.lua')
 if edit then EditMsg(msg.chat_id_,msg.id_,'60% - |███████     |') end
-download_file('https://raw.githubusercontent.com/TH3BS/BOSS/master/inc/Script.lua','./inc/Script.lua')
+download_file('https://raw.githubusercontent.com/TEAMALLAM/allam/master/inc/Script.lua','./inc/Script.lua')
 if edit then EditMsg(msg.chat_id_,msg.id_,'80% - |█████████   |') end
-download_file('https://raw.githubusercontent.com/TH3BS/BOSS/master/inc/functions.lua','./inc/functions.lua')
+download_file('https://raw.githubusercontent.com/TEAMALLAM/allam/master/inc/functions.lua','./inc/functions.lua')
 if edit then EditMsg(msg.chat_id_,msg.id_,'100% - |█████████████|\n\n🔝-* تم تحديث السورس الى اصدار *v'..redis:get(boss..":VERSION")..'*\n📟-* تم اعاده تشغيل السورس بنجاح') end
 if edit then dofile("./inc/Run.lua") end
 print("Update Source And Reload ~ ./inc/Run.lua")
 
 end
 ----------------------{ Get Name Bot }-----------------------------
-Bot_Name = redis:get(boss..":NameBot:") or "الزعيم"
+Bot_Name = redis:get(boss..":NameBot:") or "علام"
 
 
 function GetType(ChatID) 
@@ -1751,7 +1751,7 @@ local info = redis:hgetall(boss..'username:'..v)
 if info and info.username and info.username:match("@[%a%d_]+") then
 message = message ..k.. '-l ['..info.username..'] » (`' ..v.. '`) \n'
 else
-message = message ..k.. '-l ['..info.username..'](t.me/TH3bs) l » (`' ..v.. '`) \n'
+message = message ..k.. '-l ['..info.username..'](t.me/source_allam) l » (`' ..v.. '`) \n'
 end 
 end 
 if utf8.len(message) > 4096 then
@@ -2412,7 +2412,7 @@ end
 if cmd == "ban" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"• لا يمكنك حظر البوت  ؛") 
-elseif UserID == 1836706131 then 
+elseif UserID == 1859656976 then 
 return sendMsg(ChatID,MsgID,"• لا يمكنك حظر مطور السورس ؛") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"• لا يمكنك حظر المطور الاساسي ؛") 
@@ -2443,7 +2443,7 @@ end
 if cmd == "kick" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"- لا يمكنك طرد البوت ؛") 
-elseif UserID == 1836706131 then 
+elseif UserID == 1859656976 then 
 return sendMsg(ChatID,MsgID,"• لا يمكنك طرد مطور السورس ؛") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"• لا يمكنك طرد المطور الاساسي ؛") 
@@ -2488,7 +2488,7 @@ end
 if cmd == "ktm" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"•  لا يمكنك كتم البوت ؛") 
-elseif UserID == 1836706131 then 
+elseif UserID == 1859656976 then 
 return sendMsg(ChatID,MsgID,"• لا يمكنك كتم مطور السورس ؛") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"• لا يمكنك كتم المطور الاساسي ؛") 
@@ -2549,7 +2549,7 @@ end
 if cmd == "bandall" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"• لا يمكنك حظر البوت  ؛") 
-elseif UserID == 1836706131 then 
+elseif UserID == 1859656976 then 
 return sendMsg(ChatID,MsgID,"• لا يمكنك حظر مطور السورس ؛") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"• لا يمكنك حظر المطور الاساسي ؛")
@@ -2595,7 +2595,7 @@ end
 --========================================================================
 if cmd == "DwnAll" then ----------- تنزيل الكل
 if UserID == our_id then return sendMsg(ChatID,MsgID,"• لا يمكنك تنفيذ الامر مع البوت  𖤹") end
-if UserID == 1836706131 then return sendMsg(ChatID,MsgID,"• لا يمكنك تنفيذ الامر ضد مطور السورس 𖤹") end
+if UserID == 1859656976 then return sendMsg(ChatID,MsgID,"• لا يمكنك تنفيذ الامر ضد مطور السورس 𖤹") end
 
 if UserID == SUDO_ID then 
 rinkuser = 1
@@ -2801,4 +2801,16 @@ list_settings = "-` اعدادات الوسائط:`\n"
 list_settings = list_settings:gsub('true', '{ مقفول }')
 list_settings = list_settings:gsub('false', '{ مفتوح }')
 return sendMsg(msg.chat_id_,msg.id_,'➖\n'..list_settings..'\n')
+end
+
+
+
+if MsgText[1] == "السورس" or MsgText[1]=="سورس" then
+local text = " • welcome to source allam
+local inline = {
+{{text = '• source allam 彡',url="https://t.me/source_allam"}},
+{{text = '• 𝒅𝒆𝒗 父',url="https://t.me/FACKYOOOOOU"}},
+{{text = '• 𝒕𝒘𝒂𝒔𝒐𝒍 𖤹 ',url="https://t.me/A_L_L_A_Mbot"}},
+}   
+return send_inline(msg.chat_id_,text,inline,msg.id_)
 end
